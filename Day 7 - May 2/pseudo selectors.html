@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        .div1 p:first-of-type {
+            color: blue;
+        }
+
+        .div1 p:last-of-type {
+            color: red;
+        }
+
+        .div2>p:first-child {
+            background-color: blueviolet;
+        }
+
+        .div2 > p:last-child {
+            background-color: pink;
+        }
+
+        .div3 p:nth-child(2) {
+            border: 2px solid purple;
+        }
+
+        .div4 p:nth-last-of-type(2) {
+            background-color: aqua;
+        }
+
+        .div5  p:nth-of-type(2){
+            color: red;
+        }
+        .div5 li:nth-of-type(3){
+            color:green;
+        }
+
+        .div6 p:only-of-type{
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+        .div7 p:only-child{
+            text-transform: uppercase;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Selectors</h1>
+    <div class="div1">
+        <h2>first-of-type & last-of-type</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>]
+
+    <h2>first-child & last-child</h2>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            </p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+    </div>
+
+    <h2>nth-child</h2>
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </div>
+
+    <h2>nth-last-of-type</h2>
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <>Lorem ipsum dolo
+    </div>
+
+    <h2>nth-of-type</h2>
+    <div class="div5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>BootStrap</li>
+        </ul>
+    </div>
+
+    <h2>only-of-type</h2>
+    <div class="div6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p> 
+        </div>
+    </div>
+    <h2>only-child</h2>
+    <div class="div7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </span>
+        
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p> 
+        </div>
+    </div>
+</body>
+
+</html>

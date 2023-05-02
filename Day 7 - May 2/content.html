@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Content Property</title>
+    <style>
+        .para1::before{
+          content: "Hi...";  
+           }
+           .para1::after{
+          content: "...Bye";  
+           }
+
+        .para2::before{
+            content: normal;
+        }
+        
+        .para2{
+         counter-increment: increament;
+        }
+        .para2::before{
+            content: counter(increament) ;
+        }
+
+        .para3::before{
+           content: open-quote;
+        }
+        .para3::after{
+           content: close-quote;
+        }
+
+        .para4::before{
+            content: no-open-quote;
+        }
+        .para4::before{
+            content: no-close-quote;
+        }
+
+        /* .para5::before{
+            content: url(download.jpeg);
+            } */
+        .para5::after{
+            content: url(download.jpeg);
+            }
+    </style>
+</head>
+<body>
+    <h1>CSS Content Property</h1>
+    
+    <p class="para1">This is content property</p>
+    <h2>Counter property</h2>
+    <p class="para2">This is content counter property</p>
+    <p class="para2">increament index</p>
+    <h2>Open-quote & close-quote property</h2>
+    <p class="para3">This is content open and close quote property</p>
+    <h2>No-open-quote & no-close-quote property</h2>
+    <p class="para4">This is no-open and no-close-quote property</p>
+    <h2>url() property</h2>
+    <p class="para5">This is url() property</p>
+</body>
+</html>
