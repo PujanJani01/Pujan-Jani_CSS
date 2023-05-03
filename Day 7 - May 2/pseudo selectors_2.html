@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p:empty{
+        p:empty {
             border: 2px solid red;
-            width:100px;
+            width: 100px;
             height: 10px;
-         }
-        .input1:enabled{
+        }
+
+        .input1:enabled {
             background-color: rgb(19, 246, 53);
             margin-right: 10px;
         }
-        .input2:disabled{
+
+        .input2:disabled {
             background-color: rgb(218, 204, 204);
         }
-        
-        .input3:valid{
+
+        .input3:valid {
             border: 2px solid green;
         }
-        .input3:invalid{
+
+        .input3:invalid {
             border: 2px solid red;
         }
-        .input4:read-only{
+
+        .input4:read-only {
             background-color: rgb(156, 153, 153);
+        }
+        :target{
+            background-color: aquamarine;
         }
     </style>
 </head>
+
 <body>
     <h2>Empty Pseudo Selector</h2>
     <p></p>
@@ -46,5 +55,18 @@
 
     <h2>read-only</h2>
     <input class="input4" type="text" value="read-only" readonly>
+
+    <h2>target</h2>
+    <div>
+        <a href="#content1">
+            <p>Content 1</p>
+        </a>
+        <a href="#content2">
+            <p>Content 2</p>
+        </a>
+        <p id="content1">This is content 1</p>
+        <p id="content2">This is content 2</p>
+    </div>
 </body>
+
 </html>
