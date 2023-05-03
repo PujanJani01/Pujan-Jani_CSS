@@ -5,8 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        p:empty{
+            border: 2px solid red;
+            width:100px;
+            height: 10px;
+         }
+        .input1:enabled{
+            background-color: rgb(19, 246, 53);
+            margin-right: 10px;
+        }
+        .input2:disabled{
+            background-color: rgb(218, 204, 204);
+        }
+        
+        .input3:valid{
+            border: 2px solid green;
+        }
+        .input3:invalid{
+            border: 2px solid red;
+        }
+        .input4:read-only{
+            background-color: rgb(156, 153, 153);
+        }
+    </style>
 </head>
 <body>
-    
+    <h2>Empty Pseudo Selector</h2>
+    <p></p>
+    <p>This is empty</p>
+    <p>write something in empty p tag in the code to see the result.</p>
+
+    <h2>disabled and enabled</h2>
+    <input class="input1" type="text" value="Enabled">
+    <input class="input2" type="text" value="Disabled" disabled>
+
+    <h2>valid and invalid</h2>
+    <input class="input3" type="email" placeholder="email">
+    <p>if email format is wrong, its border will be red</p>
+
+    <h2>read-only</h2>
+    <input class="input4" type="text" value="read-only" readonly>
 </body>
 </html>
