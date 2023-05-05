@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+    <style>
+        .container{
+            display: flex;
+            /* align-items: center; */
+            flex-direction: column;
+            font-size: 2em;
+            
+        }
+        .header{
+            width:100%;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px 0 10px 0;
+        }
+        .content{
+            display: flex;
+        }
+        .div1{
+            width:40%;
+            margin-right: 20px;
+        }
+        .hero{
+            width:100%;
+            height: 200px;
+            background-color: lightpink;
+            margin: 10px 0 20px 0;
+        }
+        .sidebar{
+            width: 100%;
+            height: 300px;
+            background-color: darkolivegreen;
+            margin: 10px 10px 10px 0;
+        }
+        .div2{
+            width:60%;
+        }
+        .main{
+            width:100%;
+            height: 350px;
+            background-color: orange;
+            margin: 10px 0 20px 0;
+        }
+        .extra{
+            width: 100%;
+            height: 150px;
+            background-color: grey;
+            margin: 10px 10px 10px 0;
+        }
+        .div3{
+            display: flex;
+        }
+        .imgs{
+            width: 70%;
+            height: 150px;
+            background-color: green;
+            margin: 10px 10px 10px 0;
+        }
+        .posts{
+            width: 30%;
+            height: 150px;
+            background-color: palevioletred;
+            margin: 10px 10px 10px 10px;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(255, 89, 0);
+            margin: 10px 10px 10px 0;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center header">Header</div>
+        <div class="content">
+            <div class="div1">
+                <div class="center hero">Hero</div>
+                <div class="center sidebar">Sidebar</div>
+            </div>
+            <div class="div2">
+                <div class="center main">Main Content</div>
+                <div class="center extra">Extra Content</div>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="center imgs">Related Images</div>
+            <div class="center posts">Related Posts</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
