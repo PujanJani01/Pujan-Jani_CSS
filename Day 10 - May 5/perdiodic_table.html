@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Periodic Table</title>
     <style>
+        .hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         .container{
             display: flex;
+            justify-content: center;
         }
         .column1{
           display: flex;
@@ -49,7 +56,7 @@
         .column4 > div{
             height: 50px;
             width: 50px;
-            background-color: rgb(39, 39, 196);
+            background-color: rgb(83, 83, 219);
             margin: 2px;
         }
         .column5{
@@ -60,7 +67,7 @@
         .column5 > div{
             height: 50px;
             width: 50px;
-            background-color: rgb(39, 39, 196);
+            background-color: rgb(83, 83, 219);
             margin: 2px;
         }
         .column6{
@@ -71,7 +78,7 @@
         .column6 > div{
             height: 50px;
             width: 50px;
-            background-color: rgb(39, 39, 196);
+            background-color: rgb(83, 83, 219);
             margin: 2px;
         }
         .column7{
@@ -82,7 +89,7 @@
         .column7 > div{
             height: 50px;
             width: 50px;
-            background-color: rgb(39, 39, 196);
+            background-color: rgb(83, 83, 219);
             margin: 2px;
         }
         .column8{
@@ -93,7 +100,7 @@
         .column8 > div{
             height: 50px;
             width: 50px;
-            background-color: rgb(39, 39, 196);
+            background-color: rgb(83, 83, 219);
             margin: 2px;
         }
         .column9{
@@ -104,7 +111,7 @@
         .column9 > div{
             height: 50px;
             width: 50px;
-            background-color: rgb(39, 39, 196);
+            background-color: rgb(83, 83, 219);
             margin: 2px;
         }
         .column10{
@@ -115,7 +122,7 @@
         .column10 > div{
             height: 50px;
             width: 50px;
-            background-color: rgb(39, 39, 196);
+            background-color: rgb(83, 83, 219);
             margin: 2px;
         }
         .column11{
@@ -126,7 +133,7 @@
         .column11 > div{
             height: 50px;
             width: 50px;
-            background-color: rgb(39, 39, 196);
+            background-color: rgb(83, 83, 219);
             margin: 2px;
         }
         .column12{
@@ -137,7 +144,7 @@
         .column12 > div{
             height: 50px;
             width: 50px;
-            background-color: rgb(39, 39, 196);
+            background-color: rgb(83, 83, 219);
             margin: 2px;
         }
         .column13{
@@ -206,13 +213,26 @@
             background-color: #ffcc99;
             margin: 2px;
         }
+        div.nonmetal {
+            background-color: violet;
+        }
+        div.actinoid{
+            background-color: lightseagreen;
+        }
+        h1{
+         text-align: center;
+         font-size: 3em;
+         color: blue;
+        }
         
     </style>
 </head>
 <body>
+    <h1>Periodic Table</h1>
+    <div class="hero">
     <div class="container">
         <div class="column1">
-            <div class="h">H</div>
+            <div class="h nonmetal">H</div>
             <div class="li">li</div>
             <div class="na">Na</div>
             <div class="k">k</div>
@@ -229,114 +249,115 @@
             <div class="ra">Ra</div>
         </div>
         <div class="column3">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Sc</div>
+            <div>Y</div>
+            <div>La</div>
+            <div class="actinoid">Ac</div>
         </div>
         <div class="column4">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Ti</div>
+            <div>Zr</div>
+            <div>Hf</div>
+            <div>Rf</div>
         </div>
         <div class="column5">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>V</div>
+            <div>Nb</div>
+            <div>Ta</div>
+            <div>Db</div>
         </div>
         <div class="column6">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Cr</div>
+            <div>Mo</div>
+            <div>W</div>
+            <div>Sg</div>
         </div>
         <div class="column7">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Mn</div>
+            <div>Tc</div>
+            <div>Re</div>
+            <div>Bh</div>
         </div>
         <div class="column8">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Fe</div>
+            <div>Ru</div>
+            <div>Os</div>
+            <div>Hs</div>
         </div>
         <div class="column9">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Co</div>
+            <div>Rh</div>
+            <div>Ir</div>
+            <div>Mt</div>
         </div>
         <div class="column10">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Ni</div>
+            <div>Pd</div>
+            <div>Pt</div>
+            <div>Ds</div>
         </div>
         <div class="column11">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Cu</div>
+            <div>Ag</div>
+            <div>Au</div>
+            <div>Rg</div>
         </div>
         <div class="column12">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>Zn</div>
+            <div>Cd</div>
+            <div>Hg</div>
+            <div>Cn</div>
         </div>
         <div class="column13">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="b nonmetal">B</div>
+            <div>Al</div>
+            <div>Ga</div>
+            <div>In</div>
+            <div>Ti</div>
+            <div>Nh</div>
         </div>
         <div class="column14">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="c nonmetal">C</div>
+            <div class="si nonmetal">Si</div>
+            <div>Ge</div>
+            <div>Sn</div>
+            <div>Pb</div>
+            <div>Fl</div>
         </div>
         <div class="column15">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="n nonmetal">N</div>
+            <div class="p nonmetal">P</div>
+            <div aria-colspan="as">As</div>
+            <div>Sb</div>
+            <div>Bi</div>
+            <div>Mc</div>
         </div>
         <div class="column16">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="o nonmetal">O</div>
+            <div class="s nonmetal">S</div>
+            <div class="se nonmetal">Se</div>
+            <div class="te nonmetal">Te</div>
+            <div>Po</div>
+            <div>Lv</div>
         </div>
         <div class="column17">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>F</div>
+            <div>Cl</div>
+            <div>Br</div>
+            <div>I</div>
+            <div>At</div>
+            <div>Ts</div>
         </div>
         <div class="column18">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>He</div>
+            <div>Ne</div>
+            <div>Ar</div>
+            <div>Kr</div>
+            <div>Xe</div>
+            <div>Rn</div>
+            <div>Og</div>
         </div>
     </div>
+</div>  
 </body>
 </html>
