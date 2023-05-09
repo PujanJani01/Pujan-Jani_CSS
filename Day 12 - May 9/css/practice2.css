@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.w-34{
+    width: 34%;
+    height: 100%;
+}
+.w-33{
+    width: 33%;
+    height: 100%;
+}
+.h-10{
+    height: 10%;
+}
+.h-20{
+    height: 20%;
+}
+.h-5{
+    height: 5%;
+}
+.h-35{
+    height: 35%;
+}
+.h-30{
+    height: 30%;
+}
+.red{
+    background-color: rgb(186, 1, 11);
+}
+.red1{
+   background-color: rgb(231, 17, 17);
+}
+.red2{
+    background-color: rgb(244, 36, 36);
+}
+.red3{
+    background-color: rgb(241, 76, 76);
+}
+.red4{
+    background-color: rgb(237, 61, 61);
+}
+.red5{
+    background-color: rgb(200, 37, 37);
+}
+.red6{
+    background-color: rgb(247, 146, 146);  
+}

@@ -1,0 +1,30 @@
+body{
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+.main{
+    display: flex;
+    height: 80%;
+    width:80%;
+    /* background-color: red; */
+}
+.w-33{
+    width:33%;
+}
+.h-50{
+    height: 50%;
+}
+.div1{
+    background-color: rgb(249, 48, 48);
+}
+.div21, .div32{
+    background-color: brown;
+}
+.div22, .div31{
+    background-color: rgb(244, 59, 59);
+}
