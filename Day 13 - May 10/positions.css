@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.div1{
+    height: 50%;
+    width: 25%;
+    background-color: rgb(215, 213, 213);
+}
+.div2{
+    height: 50%;
+    width: 25%;
+    background-color: grey;
+}
+.div3{
+    height: 50%;
+    width: 25%;
+    background-color: brown;
+}.div4{
+    height: 50%;
+    width: 25%;
+    background-color: red;
+}
+.div5{
+    height: 50%;
+    width: 25%;
+    background-color: red;
+}
+.div6{
+    height: 50%;
+    width: 25%;
+    background-color: brown;
+}
+.div7{
+    height: 50%;
+    width: 25%;
+    background-color: grey;
+}
+.div8{
+    height: 50%;
+    width: 25%;
+    background-color: rgb(215, 213, 213);
+}
+.cir1{
+    height: 50%;
+    width: 25%;
+    background-color: rgb(63, 9, 9);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 190px;
+}
+.cir2{
+    height: 50%;
+    width: 25%;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 960px;
+}
+.cir3{
+    height: 50%;
+    width: 25%;
+    background-color: rgb(35, 168, 171);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 575px;
+    margin-top: 396px;
+}
