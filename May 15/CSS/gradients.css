@@ -1,0 +1,112 @@
+.linear{
+    display: flex;
+    gap: 20px;
+}
+.div1{
+    height: 200px;
+    width: 400px;
+   background-image: linear-gradient(blue, pink);
+}
+
+.div2{
+    height: 200px;
+    width: 400px;
+   background-image: linear-gradient(to right, red, yellow);
+}
+
+.div3{
+    height: 200px;
+    width: 400px;
+   background-image: linear-gradient(to bottom left, green, blue);
+}
+.div4{
+    height: 200px;
+    width: 400px;
+   background-image: linear-gradient( 120deg, purple, blue);
+}
+.div5{
+    height: 200px;
+    width: 400px;
+   background-image: linear-gradient( green, blue, red);
+}
+.div6{
+    height: 200px;
+    width: 400px;
+   background-image: repeating-linear-gradient( green , blue 10%, red 20%);
+}
+
+.radial{
+    display: flex;
+    gap: 20px;
+}
+.div7{
+    height: 200px;
+    width: 400px;
+   background-image: radial-gradient(blue, pink);
+}
+
+.div8{
+    height: 200px;
+    width: 400px;
+   background-image: radial-gradient(closest-side at 40% 60%, red 50%, yellow);
+}
+
+.div9{
+    height: 200px;
+    width: 400px;
+    background-image: radial-gradient(farthest-side at 40% 60%, green 40%, blue);
+}
+.div10{
+    height: 200px;
+    width: 400px;
+   background-image: radial-gradient(closest-corner at 40% 60%, purple, blue);
+}
+.div11{
+    height: 200px;
+    width: 400px;
+   background-image: radial-gradient( farthest-corner at 40% 60% , blue, red);
+}
+.div12{
+    height: 200px;
+    width: 400px;
+   background-image: repeating-radial-gradient( green , blue 10%, red 20%);
+}
+
+.conic{
+    display: flex;
+    gap: 20px;
+}
+.div13{
+    height: 200px;
+    width: 400px;
+   background-image: conic-gradient(blue, pink);
+}
+
+.div14{
+    height: 200px;
+    width: 400px;
+   background-image: conic-gradient(green 60deg, red 130deg, yellow 200deg);
+}
+
+.div15{
+    height: 200px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: conic-gradient( green, blue, purple, yellow);
+}
+.div16{
+    height: 200px;
+    width: 400px;
+   background-image: conic-gradient(from 120deg, purple, blue);
+}
+.div17{
+    height: 200px;
+    width: 400px;
+    border-radius: 50%s;
+   background-image: conic-gradient( at 40% 60% , blue, red);
+}
+.div18{
+    height: 200px;
+    width: 400px;
+   background-image: repeating-conic-gradient( green , blue 10%, red 20%);
+}
