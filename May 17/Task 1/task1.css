@@ -3,12 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #11e0ee;
+    
+}
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap:30px;
     height: 100vh;
-    background-color: rgb(28, 163, 247);
+    width: 90%;
+    margin: auto;
 }
 
 nav {
@@ -23,11 +29,10 @@ nav {
     font-weight: bold;
     font-size: 20px;
     padding: 0 30px;
-    margin: 20px;
 }
 
 .btnnav {
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .btnnav1,
@@ -35,9 +40,11 @@ nav {
     background-color: white;
     border: 1px solid black;
     font-weight: bold;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 30px;
     font-size: 20px;
+    height: 50px;
+    width: 50px;
 
 }
 
@@ -46,8 +53,6 @@ nav {
     width: 100%;
     min-height: 60%;
     gap: 10px;
-    margin: auto;
-    padding: 0 20px;
 }
 
 .profiles>div {
@@ -61,6 +66,7 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    max-width: 100%;
 
 }
 
@@ -91,16 +97,18 @@ img {
     background-color: white;
     border: 1px solid black;
     border-radius: 50%;
-    padding: 10px 10px;
     font-size: 20px;
     color: #11e0ee;
+    height: 35px;
+    width:35px;
 }
 
 .f {
     background-color: white;
     border: 1px solid black;
     border-radius: 50%;
-    padding: 10px 15px;
     font-size: 20px;
     color: #083582;
+    height: 35px;
+    width:35px;
 }
