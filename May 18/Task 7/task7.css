@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: mediumslateblue;
+}
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardwrapperodd{
+    display: flex;
+    align-items: center;     
+    gap:30px;
+}
+.cardwrappereven{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:30px;
+}
+.cardodd{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px;
+    box-shadow: 8px 8px white;
+    gap:5px;
+}
+.cardeven{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px;
+    box-shadow: 8px 8px white;
+    gap:5px;
+}
+.circle{
+    height: 15px;
+    width:15px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px white;
+}
+.num{
+     color: white;
+}
+.txt{
+    font-size: 70%;
+    color: white;
+}
