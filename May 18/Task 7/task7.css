@@ -1,60 +1,77 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: mediumslateblue;
 }
-.hero{
+
+.hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cardwrapperodd{
-    display: flex;
-    align-items: center;     
-    gap:30px;
-}
-.cardwrappereven{
+
+.cardwrappereven {
     display: flex;
     justify-content: end;
-    align-items: center;
-    gap:30px;
 }
-.cardodd{
-    display: flex;
-    flex-direction: column;
+
+.cardodd {
     text-align: right;
     border: 1px solid black;
     border-radius: 5px;
     width: 40%;
     padding: 10px;
     box-shadow: 8px 8px white;
-    gap:5px;
+    position: relative;
 }
-.cardeven{
-    display: flex;
-    flex-direction: column;
+
+.cardodd::after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px white;
+    position: absolute;
+    top: 50%;
+    left: 110%;
+}
+
+.cardeven {
     border: 1px solid black;
     border-radius: 5px;
     width: 40%;
     padding: 10px;
     box-shadow: 8px 8px white;
-    gap:5px;
+    position: relative;
 }
-.circle{
+
+.cardeven::before {
+    content: '';
     height: 15px;
-    width:15px;
+    width: 15px;
     background-color: white;
     border-radius: 50%;
     box-shadow: 3px 3px 20px white;
+    position: absolute;
+    top: 50%;
+    right: 110%;
 }
-.num{
-     color: white;
+
+.num {
+    color: white;
 }
-.txt{
+
+.txt {
     font-size: 70%;
     color: white;
+}
+
+.title {
+    margin-bottom: 5px;
 }
