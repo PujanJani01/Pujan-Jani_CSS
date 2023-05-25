@@ -7,9 +7,12 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    position: sticky;
+    top: 0;
+    z-index: 4;
     min-height: 10vh;
     border-bottom: 1px solid grey;
+    background-color: white;
 }
 .navbarwrapper{
     display: flex;
@@ -58,11 +61,10 @@ h1{
     font-size: 48px;
 }
 
-p {
+.contenttxt1 p {
     font-size: 20px;
-    margin: 24px 0 24px 0;
+    margin-bottom: 2rem;
 }
-
 .danger{
     color: #EE4248;
 }
@@ -96,7 +98,7 @@ h2 span {
     margin-bottom: 24px;
 }
 
-.para2 p {
+.contenttxt2 p {
     font-size: 18px;
     font-weight: 500;
 }
@@ -109,56 +111,57 @@ h2 span {
 
 .div3wrapper {
     flex-direction: column;
+    /* min-height: 100vh; */
 }
 
 .cardwrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
 }
 
 .card {
     width: 30%;
     position: relative;
     border-radius: 5px;
-    object-fit: cover;
-    object-fit: cover;
-    
-}
-.card img{
-    object-fit: cover;
-}   
-.card:hover .blur1{
-  opacity: 80%;
-  top:0;
-}
-.card:hover .blur2{
-    display: none;
-}
-.card:hover .txt{
-    top: 60%;
+    gap: 2rem;
 }
 
-.blur1{
+.card::before{
+    content: '';
     height: 100%;
-    width: 100%;
+    width: 100%;    
     opacity: 0;
     top: 0;
     position: absolute;
     background-color:#23C4B3B2;
-    
 }
-.blur2{
+.card:hover .txt{
+    bottom: 30%;
+}
+.card:hover:before{
+    opacity: 80%;
+}
+.card::after{
+    content: '';
     height: 100%;
     width: 100%;
     opacity: 0.7;
     top: 0;
+    left: 0;
     position: absolute;
     background: linear-gradient(180deg, rgba(35, 118, 210, 0.0001) 32.39%, #23C4B3 80%);
+    z-index: 1;
 }
+.card:hover:after{
+    display: none;
+}
+
 .txt{
-    padding: 10px;
-    top: 70%;
+    z-index: 2;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
     position: absolute;
     color: white;
 }
@@ -182,12 +185,13 @@ h2 span {
     /* margin-bottom: 15px; */
 }
 .goto{
+    z-index: 3;
     display: flex;
     align-items: center;   
     font-size: 18px;
     border-radius: 5px;
     padding: 10px;
-    width: 70%;
+    max-width: 70%;
     position: absolute;
     bottom: -5%;
     right: -10%;
@@ -210,7 +214,7 @@ img {
 
 .card h3,
 .card p {
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
 }
 
 .card button {
@@ -272,10 +276,34 @@ img {
     text-align: center;
     background-color: #EE4248;
     color: white;
+    min-height: 10vh;
+    font-size: 18px ;
 }
 
 .navbarwrapper .bar {
     display: none;
+}
+.detailswrapper .regards p{
+    font-size: 16px;
+    font-weight: 400;
+}   
+.regards p:nth-child(4){
+    margin-bottom: 2rem;
+}
+.rights{
+    margin-bottom: 1rem;
+}
+.list{
+    display: block;
+}
+.list li{
+    margin-bottom: 1rem;
+}
+.list li a{
+    font-size: 16px;
+}
+.mb-20{
+    margin-bottom: 20px;
 }
 
 /* @media screen and (max-width:1200px){
@@ -284,25 +312,68 @@ img {
     }
 } */
 
-/* @media screen and (max-width:1000px){ */
-    /* nav{
-        width: 92%;
-    } */
-    /* .navbarwrapper ul,
+@media screen and (max-width:992px){ 
+    nav{
+        width: 100%;
+    }
+    .navbarwrapper ul,
     .icons {
         display: none;
-    }
+    } 
 
     .navbarwrapper .bar {
         display: inline-block;
     }
     .container{
-        max-width: 92%;
+        max-width: 95%;
+        flex-wrap: wrap;
+        /* padding: 2rem; */
     }
-   
-} */
+    .div1wrapper{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .cardwrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .card{
+      width: 40%;
+    }
+    .card img{
+        max-width: 100%;
+    }
+    .details{
+        height: 80vh;
+    }
+    .detailswrapper{
+        max-width: 100%;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    }
+    .detailswrapper > div{
+        width: 40%;
+    }
+    img{
+        max-width: 100%;
+    }
+    .card .goto{
+        bottom: -5%;
+        right: -10%;
+        width: 80%;
+        font-size: 13px;
+    }
+    .heading h1, .heading h2{
+        font-size: 34px;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width:576px) {
+    nav{
+        width: 100%;
+    }
      .navbarwrapper ul,
     .icons {
         display: none;
@@ -315,37 +386,64 @@ img {
     .div1wrapper {
         flex-direction: column-reverse;
     }
-    
-    .container{
+    img{
         max-width: 100%;
+    }
+    .container{
         flex-wrap: wrap;
-        padding: 2rem;
     }
     .div1wrapper{
         text-align: center;
     }
+    .div3wrapper{
+        padding-top: 2rem;
+    }
     .cardwrapper{
         flex-direction: column;
-    }
-    img{
+        gap: 1rem;
+        
+     }
+     .card{
+        width: 80%;
+     }
+    .card img{
         max-width: 100%;
     }
-    .card{
-        width: 100%;
-        padding: 2rem;
-        text-align: center;
+    .card .txt{
+        width: 80%;
+    }
+    .card .goto{
+        bottom: -5%;
+        right: -10%;
+        width: 80%;
+        font-size: 13px;
     }
     .heading h1, .heading h2{
         font-size: 34px;
         text-align: center;
     }
+    .div3wrapper h2{
+        font-size: 30px;
+    }
     .details{
-        height: 90vh;
+        min-height: 100vh;
+        padding-top: 2rem;
     }
     .detailswrapper{
         max-width: 100%;
         flex-wrap: wrap;
-        padding: 2rem;
+        gap: 1rem;
+        font-size: 12px;
+    }
+    .detailswrapper > div{
+        width: 80%;
+    }
+
+    .list li{
+        margin-bottom: 5px;
+    }
+    .regards p:nth-child(4){
+        margin-bottom: 1rem;
     }
 
 }
