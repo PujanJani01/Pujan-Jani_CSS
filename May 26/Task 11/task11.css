@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+.white{
+    background-color: white;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+nav{
+   width: 10%
+}
+.sidenav{
+    border: 2px solid rgb(216, 214, 214);
+    padding: 1rem;
+}
+ul{
+    list-style: none;
+}
+.primary{
+    color: #0d6efd;
+}
+ul li:nth-child(-n+2){
+    margin-bottom: 1rem;
+}
+main{
+    border: 2px solid rgb(216, 214, 214);
+    padding: 1rem;
+    width: 75%;
+}
+.profilewrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    margin-bottom: 1rem;
+}
+.profilepic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    background-color: rgb(216, 214, 214);
+    border-radius: 4px;
+    color: grey;
+    font-size: 12px;
+}
+.profile{
+    display: flex;
+    gap:1rem;
+}
+.joining{
+    text-align: right;
+    align-self: flex-start;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+.btn-primary{
+    padding: 7px 12px;
+    color: white;
+    background-color: #0d6efd;
+    border-radius: 5px;
+    border: none;
+}
+.btn-secondary{
+    border-radius: 3px;
+    border: none;
+    padding: 2px 5px;
+    background-color: gray;
+    color: white;
+}
+.sidebar{
+    max-width: 15%;
+}
+.log{
+    border: 2px solid rgb(216, 214, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    margin-bottom: 1rem;
+}
+.logout{
+    padding: 10px 30px;
+}
+.support{
+    border: 2px solid rgb(216, 214, 214);
+    padding: 1rem;
+}
+
+.insidenav{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.borderbottom {
+    border-bottom: 2px solid rgb(216, 214, 214);
+    width: 100%;
+}
+.settings{
+    border: 2px solid rgb(216, 214, 214);
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    max-width: 10%;
+    padding: 5px 10px;
+    background-color: white;
+}
+.namewrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.fullname, .username, .email, .about,
+.currentpassword, .newpassword, .confirmpassword{
+    display: flex;
+    flex-direction: column;
+}
+.name, .uname, .cpass, .npass, .conpass{
+    border-radius: 5px;
+    padding: 6px 50px 6px 5px;
+    width: 30vw;
+    border:2px solid rgb(216, 214, 214);
+}
+.emailwrapper, .aboutwrapper, .currentpassword, .newpassword{
+    margin-bottom: 1rem;
+}
+.emailinput, .aboutinput{
+    border-radius: 5px;
+    padding: 6px 0px 6px 5px;
+    border:2px solid rgb(216, 214, 214);
+}
+textarea{
+    resize: vertical;
+}
+.passnotification{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
+.notificationwrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.notificationwrapper > div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.btnsave{
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: aliceblue;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+     color: #0d6efd;
+    align-self: flex-start;
+}
+main{
+    display: flex;
+    gap: 2rem;
+}
+.days{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.primary{
+    background-color: #0d6efd;
+    color: white;
+}
+.day{
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    text-align: left;
+}
+.day2{
+    background-color: aliceblue;
+}
+.shedule{
+    display: flex;
+}
+.time{
+    border-right: 2px solid gray;
+    padding-right: 20px;
+}
+.task{
+    padding:5px 20px;
+    width:70%;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}

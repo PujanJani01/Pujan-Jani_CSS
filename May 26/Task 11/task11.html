@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11</title>
+    <link rel="stylesheet" href="task11.css">
+    <script src="https://kit.fontawesome.com/26eb4a501d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="hero">
+    <div class="container">
+        <nav>
+            <div class="sidenav white">
+                <ul>
+                    <li class="primary"><a><i class="fa-light far fa-chart-bar"></i> Overview</a></li>
+                    <li class="primary"><a><i class="fa-solid fas fa-columns"></i> CRUD</a></li>
+                    <li class="primary"><a><i class="fa-solid far fa-gear"></i> Settings</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="white">
+            <div class="profilewrapper">
+                <div class="profile">
+                    <div class="profilepic">140x140</div>
+                    <div class="profiledetails">
+                        <h2 class="mb-8">John Smith</h2>
+                        <p class="mb-8">@johnny.s</p>
+                        <p class="mb-8">Last seen 2 hours ago</p>
+                        <button class="btn-primary"><i class="fa-duotone far fas fa-camera"></i> Change Photo</button>
+                    </div>
+                </div>
+                <div class="joining">
+                    <button class="btn-secondary mb-8">adminstrator</button>
+                    <p>Joined 09 Dec 2017</p>
+                </div>
+            </div>
+
+            <div class="insidenav">
+                <button class="settings">Settings</button>
+                <div class="borderbottom"></div>
+            </div>
+
+            <div class="namewrapper">
+                <div class="fullname">
+                    <label for="name" class="mb-8">Full Name</label>
+                    <input id="name" class="name" type="text" value="John Smith">
+                </div>
+
+                <div class="username">
+                    <label for="uname" class="mb-8">Full Name</label>
+                    <input id="uname" class="uname" type="text" value="johnny.s">
+                </div>
+            </div>
+
+            <div class="emailwrapper">
+                <div class="email">
+                    <label for="email" class="mb-8">Email</label>
+                    <input id="email" class="emailinput" type="email" placeholder="user@example.com">
+                </div>
+            </div>
+
+            <div class="aboutwrapper">
+                <div class="about">
+                    <label for="about" class="mb-8">About</label>
+                    <textarea id="about" class="aboutinput" rows="5">My Bio</textarea>
+                </div>
+            </div>
+
+            <div class="passnotification">
+                <div class="passwordwrapper">
+                    <h4>Change Password</h4>
+                    <div class="currentpassword">
+                        <label for="currentpassword" class="mb-8">Current Password</label>
+                        <input type="password" id="currentpassword" class="cpass">
+                    </div>
+                    <div class="newpassword">
+                        <label for="newpassword" class="mb-8">NewPassword</label>
+                        <input type="password" id="newpassword" class="npass">
+                    </div>
+                    <div class="confirmpassword">
+                        <label for="confirmpassword" class="mb-8">Confirm Password</label>
+                        <input type="password" id="confirmpassword" class="conpass">
+                    </div>
+                </div>
+
+                <div class="notificationwrapper">
+                    <h4 class="mb-8">keeping in Touch</h4>
+                    <p class="mb-8">Email Notification</p>
+                    <div>
+                        <div>
+                            <input type="checkbox" id="blog">
+                    <label for="blog">Blog posts</label>
+                        </div>
+                    <div>
+                        <input type="checkbox" id="news">
+                    <label for="news">Newsletter</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="offers">
+                    <label for="offers">Personal Offers</label>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            <div class="btnsave">
+                <button class="btn-primary">Save Changes</button>
+            </div>
+        </main>
+
+        <section class="sidebar">
+            <div class="log white">
+                <button class="logout btn-secondary"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+            </div>
+            <div class="support white">
+                <h4 class="mb-8">Support</h4>
+                <p class="mb-8">Get fast, free help from our friendly assistants.</p>
+                <button class="btn-primary">Contact US</button>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+
+</html>
