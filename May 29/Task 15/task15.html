@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 15</title>
+    <link rel="stylesheet" href="task15.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="emailwrapper mb-2">
+                <h3 class="mb-2">Contact information</h3>
+
+                <div class="email d-flex">
+                    <label for="email" class="mb-10px">Email address</label>
+                    <input type="text" id="email">
+                </div>
+            </div>
+
+            <div class="paymentwrapper mb-2">
+                <h3 class="mb-2">Payment details</h3>
+
+                <div class="name d-flex mb-1">
+                    <label for="name" class="mb-10px">Name on card</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="cardnum d-flex mb-1">
+                    <label for="cardnum" class="mb-10px">Card number</label>
+                    <input type="text" id="cardnum">
+                </div>
+
+                <div class="exdateandcvc flex-row g-1">
+                    <div class="exapirationdate d-flex">
+                        <label for="exapirationdate" class="mb-10px">Exapiration date (MM/YY)</label>
+                        <input type="text" id="exapirationdate">
+                    </div>
+                    <div class="cvc d-flex  ">
+                        <label for="cve" class="mb-10px">CVC</label>
+                        <input type="text" id="cvc">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="shippingaddress mb-2">
+                <h3 class="mb-1">Shipping address</h3>
+
+                <div class="company d-flex mb-1">
+                    <label for="company" class="mb-10px">Company</label>
+                    <input type="text" id="company">
+                </div>
+
+                <div class="address d-flex mb-1">
+                    <label for="address" class="mb-10px">Address</label>
+                    <input type="text" id="address">
+                </div>
+
+                <div class="apartment d-flex mb-1">
+                    <label for="apartment" class="mb-10px">Apartment, suite, etc.</label>
+                    <input type="text" id="apartment">
+                </div>
+
+                <div class="citystatepostalcode flex-row g-1">
+                    <div class="city d-flex w-33">
+                        <label for="city" class="mb-10px">City</label>
+                        <input type="text" id="city">
+                    </div>
+
+                    <div class="state d-flex w-33">
+                        <label for="state" class="mb-10px">State / Province</label>
+                        <input type="text" id="state">
+                    </div>
+
+                    <div class="postalcode d-flex w-33">
+                        <label for="postalcode" class="mb-10px">Postal code</label>
+                        <input type="text" id="postalcode">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bill mb-2">
+                <h3 class="mb-1">Billing information</h3>
+                <input type="checkbox" id="check" checked>
+                <label for="check">Same as shipping information</label>
+            </div>
+
+            <div class="continue flex-row">
+                <p>You won't be charged until the next step.</p>
+                <button class="primary">Continue</button>
+            </div>
+        </div>
+
+        <div class="col">
+            <h3>Order summary</h3>
+
+            <div class="row flex-row ">
+                <div class="flex-row g-1">
+                    <div class="img">
+                        <img src="shopping.webp" alt="backpack">
+                    </div>
+
+                    <div>
+                        <p class="itemname mb-5px">Micro Backpack</p>
+                        <p class="sm mb-5px">Moss</p>
+                        <p class="sm">5L</p>
+                    </div>
+                </div>
+                <div>
+                    <b>$70.00</b>
+                </div>
+            </div>
+
+            <div class="row flex-row ">
+                <div class="flex-row g-1">
+                    <div class="img">
+                        <img src="shopping (1).webp" alt="backpack">
+                    </div>
+
+                    <div>
+                        <p class="itemname mb-5px">Small Stuff Satchel</p>
+                        <p class="sm mb-5px">Sand</p>
+                        <p class="sm">18L</p>
+                    </div>
+                </div>
+                <div>
+                    <b>$180.00</b>
+                </div>
+            </div>
+
+            <div class="row flex-row ">
+                <div class="flex-row g-1">
+                    <div class="img">
+                        <img src="images (1).jpeg" alt="backpack">
+                    </div>
+
+                    <div>
+                        <p class="itemname mb-5px">Carry Clutch</p>
+                        <p class="sm mb-5px">White and Black</p>
+                        <p class="sm">Samll</p>
+                    </div>
+                </div>
+                <div>
+                    <b>$70.00</b>
+                </div>
+            </div>
+
+            <div class="row py-10px">
+                <div class="flex-row space-between py-10px">
+                    <p>Subtotal</p>
+                    <p>$320.00</p>
+                </div>
+                <div class="flex-row space-between py-10px">
+                    <p>Shipping</p>
+                    <p>$15.00</p>
+                </div>
+                <div class="flex-row space-between py-10px">
+                    <p>Taxes</p>
+                    <p>$26.80</p>
+                </div>
+            </div>
+
+            <div class="flex-row space-between py-10px">
+                <strong>Total</strong>
+                <strong>$361.80</strong>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
