@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+h3{
+    color: mediumslateblue;
+    position: relative;
+}
+div h3::after{
+   content: '';
+   height: 1px;
+   width: 68%;
+   background-color: grey;
+   position: absolute;
+   top: 50%;
+   left: 30%; 
+}
+p{
+    padding-right: 2rem;
+    opacity: 0.7;
+}
+h2{
+    margin: 1rem 0 1rem 0
+}
+@media only screen and (max-width:1200px) {
+    body{
+        flex-wrap: wrap;
+    }
+    div{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:768px) {
+
+    div{
+        width: 100%;
+    }
+}   
+@media only screen and (max-width:576px){
+     div{
+        margin-bottom: 1rem;
+     }
+}
+   
+    </style>
+</head>
+<body>
+    <div>
+        <h3>• Aug 2021</h3>
+        <h2>Founded company</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid officiis ad illum, perferendis odio molestiae impedit alias ratione dolorem atque quia adipisci numquam nostrum eaque doloremque, animi modi repellat ipsa?</p>
+    </div>
+
+    <div>
+        <h3>• Dec 2021</h3>
+        <h2>Secured $65m in funding</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid officiis ad illum, perferendis odio molestiae impedit alias ratione dolorem atque quia adipisci numquam nostrum eaque doloremque, animi modi repellat ipsa?</p>
+    </div>
+
+    <div>
+        <h3>• Feb 2022</h3>
+        <h2>Released beta</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid officiis ad illum, perferendis odio molestiae impedit alias ratione dolorem atque quia adipisci numquam nostrum eaque doloremque, animi modi repellat ipsa?</p>
+    </div>
+
+    <div>
+        <h3>• Dec 2022</h3>
+        <h2>Global launch of product</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid officiis ad illum, perferendis odio molestiae impedit alias ratione dolorem atque quia adipisci numquam nostrum eaque doloremque, animi modi repellat ipsa?</p>
+    </div>
+</body>
+</html>
