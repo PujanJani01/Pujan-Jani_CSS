@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <script src="https://kit.fontawesome.com/26eb4a501d.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+
+header {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+header i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #09de;
+}
+
+.profilewrapper {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile div:first-of-type {
+    display: flex;
+}
+
+.name {
+    padding: 5px 0 0 1rem;
+}
+
+.profilepic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.edit {
+    background: none;
+    border: none;
+    align-self: flex-start;
+}
+
+.btn {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.btn-primary {
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #09de;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.personalinfowrapper,
+.professionalinfowrapper {
+    padding: 2rem 0;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.personalinfo,
+.professionalinfo {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.personalinfo>div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.personalinfo>div>*:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.title select,
+.phone select {
+    width: min-content
+}
+
+.title select option {
+    color: grey;
+}
+
+input {
+    padding: 10px;
+    background-color: rgba(210, 236, 247, 0.933);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(210, 236, 247, 0.933);
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    outline: none;
+}
+
+.gender {
+    display: flex;
+    gap: 2rem;
+}
+
+.gender>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone {
+    display: flex;
+    gap: 10px;
+}
+
+.aadharcard {
+    padding: 10px;
+    background-color: rgba(210, 236, 247, 0.933);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: grey;
+    font-size: 14px;
+    position: relative;
+}
+
+.upload {
+    color: #09de;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    right: 2%;
+    top: 15%;
+    box-shadow: 1px 1px 5px 1px rgb(176, 175, 175);
+}
+
+.professionalinfo>div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.professionalinfo>div>*:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.btn-save {
+    width: 100%;
+    border: none;
+    background-color: #09de;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <i class="fa-solid fa-chevron-left"></i>
+        My Profile
+    </header>
+
+    <section class="profilewrapper">
+        <div class="profile">
+            <div>
+                <div class="profilepic">
+                    <img src="https://source.unsplash.com/random/80x80/?face" alt="profilepic">
+                </div>
+                <div class="name">
+                    <h3>Dr Bhaskar Sharma</h3>
+                    <p>DRID A57601</p>
+                </div>
+            </div>
+
+            <button class="edit">
+                <i class="fa-solid fa-pen"></i>
+            </button>
+        </div>
+
+        <div class="btn">
+            <button class="btn-primary">Doctor profile</button>
+            <button class="btn-secondary">General Information</button>
+        </div>
+    </section>
+
+    <section class="personalinfowrapper">
+        <h3>Personal Information</h3>
+        <div class="personalinfo">
+            <div class="title">
+                <label for="title">Title</label>
+                <select>
+                    <option>Dr</option>
+                </select>
+            </div>
+
+            <div class="fname">
+                <label for="fname">First Name</label>
+                <input id="fname" type="text" placeholder="Enter your first name">
+            </div>
+
+            <div class="lname">
+                <label for="lname">Last Name</label>
+                <input id="lname" type="text" placeholder="Enter your last name">
+            </div>
+
+            <div class="email">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="genderwrapper">
+                <p>Gender</p>
+                <div class="gender">
+                    <div>
+                        <input id="male" type="radio" checked>
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input id="female" type="radio">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input id="others" type="radio">
+                        <label for="others">Others</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="phonewrapper">
+                <p>Mobile Number</p>
+                <div class="phone">
+                    <select class="countrycode">
+                        <option>+91</option>
+                        <option>+01</option>
+                    </select>
+                    <input id="phone" type="tel" placeholder="0000000000">
+                </div>
+
+            </div>
+
+            <div class="dob">
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date" placeholder="example@gmail.com">
+            </div>
+
+            <div class="address">
+                <label for="address">Address</label>
+                <input id="address" type="text" placeholder="Building Name, Street Name,...">
+            </div>
+
+            <div class="state">
+                <p>State</p>
+                <select>
+                    <option>Select your state</option>
+                    <option>Gujarat</option>
+                    <option>Maharastra</option>
+                    <option>Rajsthan</option>
+                </select>
+            </div>
+
+            <div class="city">
+                <p>City</p>
+                <select>
+                    <option>Select your city</option>
+                    <option></option>
+                </select>
+            </div>
+
+            <div class="pincode">
+                <label for="pincode">Pin Code</label>
+                <input id="pincode" type="text" placeholder="Enter your pin code">
+            </div>
+
+            <div class="aadharcardwrapper">
+                <p>Aadhar Card</p>
+                <div class="aadharcard">
+                    <div>
+                        Uplode your aadhar card
+                    </div>
+                    <input type="file" id="upload" hidden>
+                    <label for="upload" class="upload">Upload</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="professionalinfowrapper">
+        <h3>Professional Information</h3>
+        <div class="professionalinfo">
+            <div class="registrationid">
+                <label for="registrationid">Registration Id</label>
+                <input id="registrationid" type="text" placeholder="Enter your pin code">
+            </div>
+
+            <div class="year">
+                <p>Year of Registration</p>
+                <select>
+                    <option>YYYY</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                </select>
+            </div>
+
+            <div class="parentname">
+                <label for="parentname">Parent's Name</label>
+                <input id="parentname" type="text" placeholder="Enter your parent's name">
+            </div>
+
+            <div class="registraiondoc">
+                <p>Registration Documnet</p>
+                <div class="aadharcard">
+                    <div>
+                        Uplode your registration document
+                    </div>
+
+                    <input type="file" id="upload" hidden>
+                    <label for="upload" class="upload">Upload</label>
+                </div>
+            </div>
+
+            <div class="medicalcouncil">
+                <p>State Medical Council</p>
+                <select>
+                    <option>Select your state medical council</option>
+                    <option>Gujarat Medical Council</option>
+                </select>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <button class="btn-save">SAVE</button>
+</body>
+
+</html>
