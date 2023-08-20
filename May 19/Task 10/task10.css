@@ -224,9 +224,10 @@ img {
 }
 
 .details {
-    height: 50vh;
+    /* min-height: 50vh; */
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .detailswrapper {
@@ -296,9 +297,10 @@ img {
 .list{
     display: block;
 }
-.list li{
+.list li:nth-child(-n+3){
     margin-bottom: 1rem;
 }
+
 .list li a{
     font-size: 16px;
 }

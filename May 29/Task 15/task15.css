@@ -85,3 +85,8 @@ img{
     background-color: whitesmoke;
     
 }
+.sticky{
+    position: fixed;
+    right: 0;
+    height: 100%;
+}

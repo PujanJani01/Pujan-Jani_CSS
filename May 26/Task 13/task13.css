@@ -50,9 +50,10 @@ main{
 .time{
     border-right: 2px solid gray;
     padding-right: 20px;
+    width: 23%;
 }
 .task{
-    padding:5px 20px;
+    padding:0 20px;
     width:70%;
 }
 .mb-2{

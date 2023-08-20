@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    padding: 3rem 2rem;
+
+}
+
+.col1 {
+    /* padding-right: 1rem; */
+}
+
+.col2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 50%;
+    padding: 1rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img {
+    /* width: 100%; */
+}
+
+.div:nth-child() {
+    padding-top: 1rem;
+}
+
+i {
+    opacity: 0.5;
+}
+
+.perosndetails {
+    padding-top: 1rem;
+}
+
+.perosndetails div:nth-child(-n+2) {
+    margin-bottom: 15px;
+}
+
+.personname p:nth-child(2),
+.about,
+.col1 p {
+    color: grey;
+}
+
+.col1 h1 {
+    margin-bottom: 1rem;
+}
+
+.fa-twitter{
+    margin-right: 1rem;
+}
+@media only screen and (max-width:992px){
+    .container{
+    flex-direction: column;
+    }
+}
+@media only screen and (max-width:576px){
+    .container{
+     flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+}

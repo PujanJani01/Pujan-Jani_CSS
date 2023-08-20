@@ -38,7 +38,7 @@
             width: 60px;
             position: relative;
             font-size: 50px;
-            color: white; 
+            color: blue; 
         }
         p{
             /* padding-top: 8px ; */
@@ -62,6 +62,8 @@
             border: 3px solid blue;
             border-radius: 6px;
             cursor: pointer;
+            
+            
         }
         span::after{
             content: '';
@@ -80,6 +82,10 @@
             height: 50px;
             opacity: 1;
         }
+        input:checked ~ span{
+            background-color: rgb(204, 204, 247);
+        }
+        
 
        
     </style>

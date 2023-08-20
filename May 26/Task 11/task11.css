@@ -9,16 +9,12 @@ body{
 .white{
     background-color: white;
 }
-.hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+
 .container{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    padding: 1rem;
 }
 nav{
    width: 10%
@@ -90,9 +86,8 @@ main{
 .log{
     border: 2px solid rgb(216, 214, 214);
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 8vh;
+    padding: 1rem 0;
     margin-bottom: 1rem;
 }
 .logout{
